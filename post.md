@@ -25,22 +25,24 @@
       }
     ```
 </div>
-  <div class="tab-pane fade" id="pills-profile" role="tabpanel">
-  <pre><code class="language-solidity">
-  // SPDX-License-Identifier: MIT
-pragma solidity 0.8.25;
+<div class="tab-pane fade" id="pills-profile" role="tabpanel">
+  \```
+    // SPDX-License-Identifier: MIT
+    pragma solidity 0.8.25;
 
-contract Proxy {
-    // Change the implementation address to the one you get after deploying the
-    // implementation contract
-    address immutable implementation = 0x44fE319Fc0C2d3e09F9a86AF94eEabB6173A1d58;
+    contract Proxy {
+        // Change the implementation address to the one you get after deploying the
+        // implementation contract
+        address immutable implementation = 0x44fE319Fc0C2d3e09F9a86AF94eEabB6173A1d58;
 
-    fallback(bytes calldata data) external returns (bytes memory) {
-        (bool success, bytes memory result) = implementation.delegatecall(data);
-        require(success, "Delegatecall failed");
-        return result;
-     }
-}</code></pre></div>
-  <div class="tab-pane fade" id="pills-contact" role="tabpanel">...</div>
+        fallback(bytes calldata data) external returns (bytes memory) {
+            (bool success, bytes memory result) = implementation.delegatecall(data);
+            require(success, "Delegatecall failed");
+            return result;
+        }
+      }
+  \```
 </div>
+  <div class="tab-pane fade" id="pills-contact" role="tabpanel">...</div>
+  </div>
 </div>

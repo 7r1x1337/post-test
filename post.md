@@ -1,6 +1,5 @@
 ## Test Post
 
-<div class="tab-container">
 <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
   <li class="nav-item" role="presentation">
     <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab">code-1.sol</button>
@@ -15,28 +14,14 @@
 
 <div class="tab-content" id="pills-tabContent">
   <div class="tab-pane fade show active" id="pills-home" role="tabpanel">
-   ```solidity
-    contract Implementation {
-        event Result(uint256 newValue);
+    ```solidity
+      contract Implementation {
+          event Result(uint256 newValue);
 
-        function addNumbers(uint256 number1, uint256 number2) public returns (uint256 result ) {
-            result = number1 + number2;
-            emit Result(result);
-        }
-    }```
-</div>
-<div class="tab-pane fade" id="pills-profile" role="tabpanel">
-```solidity
-contract Implementation {
-    event Result(uint256 newValue);
-
-    function addNumbers(uint256 number1, uint256 number2) public returns (uint256 result ) {
-        result = number1 + number2;
-        emit Result(result);
-    }
-}
-```
-</div>
-  <div class="tab-pane fade" id="pills-contact" role="tabpanel">...</div>
+          function addNumbers(uint256 number1, uint256 number2) public returns (uint256 result ) {
+              result = number1 + number2;
+              emit Result(result);
+          }
+      }
+    ```
   </div>
-</div>

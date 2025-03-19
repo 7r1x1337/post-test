@@ -13,15 +13,14 @@
 </ul>
 
 <div class="tab-content" id="pills-tabContent">
-<div class="tab-pane fade show active" id="pills-home" role="tabpanel">
-```solidity
-contract Implementation {
-  event Result(uint256 newValue);
+<div class="tab-pane fade show active" id="pills-home" role="tabpanel">```solidity
+    contract Implementation {
+      event Result(uint256 newValue);
 
-  function addNumbers(uint256 number1, uint256 number2) public returns (uint256 result ) {
-    result = number1 + number2;
-    emit Result(result);
+      function addNumbers(uint256 number1, uint256 number2) public returns (uint256 result ) {
+        result = number1 + number2;
+        emit Result(result);
+      }
     }
-  }
-```s
+    ```
 </div>

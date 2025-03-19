@@ -26,8 +26,7 @@
     ```
 </div>
 <div class="tab-pane fade" id="pills-profile" role="tabpanel">
-  \```
-    // SPDX-License-Identifier: MIT
+    ```// SPDX-License-Identifier: MIT
     pragma solidity 0.8.25;
 
     contract Proxy {
@@ -40,8 +39,7 @@
             require(success, "Delegatecall failed");
             return result;
         }
-      }
-  \```
+      }```
 </div>
   <div class="tab-pane fade" id="pills-contact" role="tabpanel">...</div>
   </div>

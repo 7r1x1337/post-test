@@ -14,15 +14,15 @@
 </ul>
 <div class="tab-content" id="pills-tabContent">
   <div class="tab-pane fade show active" id="pills-home" role="tabpanel">
-    ```
-    {
-      "firstName": "John",
-      "lastName": "Smith",
-      "age": 25
-    }
-    ```
+    <code>
+    x = 5;
+    y = 6;
+    z = x + y;
+    </code>
 </div>
-  <div class="tab-pane fade" id="pills-profile" role="tabpanel"><pre><code class="language-solidity">// SPDX-License-Identifier: MIT
+  <div class="tab-pane fade" id="pills-profile" role="tabpanel">
+  <pre><code class="language-solidity">
+  // SPDX-License-Identifier: MIT
 pragma solidity 0.8.25;
 
 contract Proxy {
